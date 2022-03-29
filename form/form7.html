@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>필수사항</legend>
+        <div>
+          <label for="name">이름</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="email">이메일</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="password">비밀번호</label>
+          <input type="password" name="password" id="password" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>부가 입력 사항</legend>
+        <div>
+          <label for="birth">생년월일</label>
+          <input type="date" name="birth" id="birth" />
+        </div>
+        <div>
+          <label for="addr">거주지를 선택해 주세요</label><br />
+          <select name="addr" id="">
+            <option value="서울">서울</option>
+            <option value="경기">경기</option>
+            <option value="부산">부산</option>
+            <option value="전라">전라</option>
+          </select>
+        </div>
+        <div>
+          <label for="">취미</label>
+          <label>
+            <input type="checkbox" name="read" id="read" value="독서" />독서
+          </label>
+          <label>
+            <input type="checkbox" name="travel" id="read" value="여행" />여행
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="movie"
+              id="read"
+              value="영화감상"
+            />영화감상
+          </label>
+        </div>
+        <div>
+          <label for="">성별</label>
+          <label>
+            <input type="radio" name="gender" id="" value="남성" />남성
+          </label>
+          <label>
+            <input type="radio" name="gender" id="" value="여성" />여성
+          </label>
+        </div>
+        <div>
+          <label for="">사진을 등록해 주세요</label>
+          <input type="file" name="file" id="file" />
+        </div>
+        <div>
+          <label for="">방문 경로를 말씀해 주세요</label><br />
+          <textarea name="msg" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <button type="submit">회원가입</button>
+      <button type="reset">재작성</button>
+      <button type="button">전송</button>
+    </form>
+  </body>
+</html>

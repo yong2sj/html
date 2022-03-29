@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label for="userid">userid</label>
+        <input type="text" name="userid" id="userid" />
+      </div>
+      <div>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="gender">성별</label>
+        <input type="radio" name="gender" id="gender" value="남" />남
+        <input type="radio" name="gender" id="gender_f" value="여" />여
+      </div>
+      <div>
+        <!-- select : drop-down list-->
+        <select name="fruit" id="fruit" size="5" multiple>
+          <option value="사과">사과</option>
+          <option value="바나나">바나나</option>
+          <option value="딸기" selected>딸기</option>
+          <option value="포도">포도</option>
+          <option value="수박">수박</option>
+        </select>
+      </div>
+      <div>
+        <textarea name="info" id="" cols="5" rows="5"></textarea>
+      </div>
+      <div>
+        <!-- submit : form 을 action과 method 지정한 방식에 따라 서버로 전송
+             reset : 버튼과 연결되어 있는 폼 양식 초기화
+             button : 새로운 기능 정의할 때
+        -->
+        <input type="submit" value="보내기" />
+        <input type="reset" value="처음부터" />
+        <input type="button" value="버튼" onclick="alert('Hello World')" />
+      </div>
+      <div>
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+        <button type="button" onclick="alert('Hello World2')">클릭</button>
+      </div>
+    </form>
+  </body>
+</html>

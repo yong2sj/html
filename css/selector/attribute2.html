@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1,2번째 버튼의 글자는 굵게, 안쪽여백 10px */
+      [class^="btn-"] {
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 50px; /* 테두리를 둥글게 */
+      }
+      /* 1번째 버튼의 글자는 녹색 */
+      [class$="success"] {
+        color: green;
+      }
+      /* 2번째 버튼의 글자는 빨간색 */
+      [class$="danger"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn-success">Success</button>
+    <button class="btn-danger">Danger</button>
+    <button>Normal</button>
+  </body>
+</html>

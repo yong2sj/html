@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [target] {
+        text-decoration: none;
+      }
+      [target="_blank"] {
+        background-color: blue;
+        color: white;
+      }
+      [target="_self"] {
+        background-color: red;
+        color: white;
+      }
+      /* .link1,
+      .link2 {
+        list-style-type: none;
+      } */
+      [class^="link"] {
+        /*  ^ : link로 시작하는 ~ */
+        list-style-type: none;
+      }
+      [class$="name"] {
+        /*  $ : name으로 끝나는 ~ */
+        color: red;
+        padding: 10px;
+      }
+      [class$="color"] {
+        /*  $ : color으로 끝나는 ~ */
+        color: blue;
+        padding: 10px;
+        opacity: 0.3;
+      }
+
+      /*    ~ : 포함하고 있는 */
+    </style>
+  </head>
+  <body>
+    <!-- css 선택자(중요 - 자바스크립트에서도 사용) 
+         1.  태그 선택자 : 태그명을 기준으로 설정(가장 쉬움) 
+         2.  전체 선택자 : body안 모든 태그를 의미(*)
+         3.  클래스 선택자 : 지정된 클래스명을 가지고 있는 태그를 지정
+         4.  아이디 선택자 : 지정된 아이디명을 가지고 있는 태그를 지정
+         5.  자손(하위) 선택자 : 자손 태그를 지정(공백)
+         6.  자식 선택자 : 자식 태그를 지정( > )
+         7.  형제 선택자 : 형제 태그를 지정( + or ~ )
+         8.  속성 선택자 : 속성 값을 가지고 있는 태그를 지정( [속성] )
+     -->
+    <div>
+      <h1>CSS 기본 문법</h1>
+      <h2>속성 선택자</h2>
+      <ul>
+        <li class="google">
+          <a href="#" target="_blank">google</a>
+        </li>
+        <li class="link1">
+          <a href="#" target="_blank">naver</a>
+        </li>
+        <li class="link2">
+          <a href="#" target="_self">daum</a>
+        </li>
+      </ul>
+      <div>
+        <input type="text" class="fruit_name" id="" />
+        <input type="text" class="fruit_color" id="" />
+      </div>
+      <a href="mailto:master@google.com">master@google.com</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>상품주문서</h1>
+    <form action="" method="get">
+      <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+          <li>
+            <label for="username">이름</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="여백없이 입력"
+            />
+          </li>
+          <li>
+            <label for="usertel">연락처</label>
+            <input
+              type="text"
+              name="usertel"
+              id="usertel"
+              placeholder="연락가능한 번호"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <ul>
+          <li>
+            <label for="addr">주소</label>
+            <input type="text" name="addr" id="addr" />
+          </li>
+          <li>
+            <label for="tel">전화번호</label>
+            <input type="text" name="tel" id="tel" />
+          </li>
+          <li>
+            <label for="memo">메모</label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="" id="" />과테말라 안티구아 (100g)
+            <input type="text" name="" id="" size="5" />개
+          </li>
+          <li>
+            <input type="checkbox" name="" id="" />인도네시아 만델링 (100g)
+            <input type="text" name="" id="" size="5" />개
+          </li>
+          <li>
+            <input type="checkbox" name="" id="" />탐라는도다(블렌딩) (100g)
+            <input type="text" name="" id="" size="5" />개
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="주문하기" />
+      <input type="reset" value="다시작성" />
+    </form>
+  </body>
+</html>
